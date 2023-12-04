@@ -1,0 +1,61 @@
+.mainLayout {
+  display: flex;
+  overflow: unset;
+  background-image: url("../assets/images/mainLayoutBG.png");
+  background-color: #060b26;
+  background-size: cover; /* Adjust as needed */
+  background-position: center center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  height: 100dvh; /* Temporary */
+}
+
+.sideBar {
+  width: 310px;
+  background: var(--secondry-bg);
+  border-right: 1px var(--divider) solid;
+}
+
+.sideBar,
+.sideBarOpen {
+  flex-shrink: 0;
+}
+
+.contentNavBar {
+  width: 100%;
+}
+
+.outlet {
+  padding: 30px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .mainLayout {
+    display: block;
+    min-height: 100dvh;
+  }
+
+  .sideBar {
+    transition: all 0.25s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  .outlet {
+    padding-inline: 15px;
+  }
+
+  .sideBar,
+  .sideBarOpen {
+    z-index: 999;
+    position: fixed;
+  }
+
+  .sideBarOpen {
+    width: 250px;
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0.25s ease;
+  }
+}
