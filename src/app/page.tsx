@@ -1,7 +1,9 @@
+import HomeView from "./home/page";
+
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
+      <HomeView />
     </main>
   );
 }
