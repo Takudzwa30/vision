@@ -1,23 +1,26 @@
 import React from "react";
+
+// Libraries
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IoIosCheckboxOutline } from "react-icons/io";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { IoHome } from "react-icons/io5";
 
 // Images
 import sideBarLogo from "@/assets/logos/sideBarLogo.png";
 
 import Style from "./Sidebar.module.css";
-import Image from "next/image";
-import Link from "next/link";
 
+// Types
 interface Route {
   path: string;
   title: string;
-  subRoutes: string[]; // Change this to the actual type of subRoutes if applicable
+  subRoutes?: string[];
+  icon: React.ReactElement;
 }
 
 interface Category {
-  categoryTitle: string;
+  categoryTitle?: string;
   routes: Route[];
 }
 
@@ -39,15 +42,26 @@ const Sidebar: React.FC<SidebarProps> = ({
   sidebarCategories,
 }) => {
   return (
-    <div className={Style.sideBar}>
-      <div className={Style.logoWrapper}>
-        <Image src={sideBarLogo} alt="Logo" />
+    <div className={Style.sideBarWrapper}>
+      <div className={Style.sideBar}>
+        <div>
+          <div className={Style.logoWrapper}>
+            <Image src={sideBarLogo} alt="Logo" />
+          </div>
+          <SidebarLinks
+            setSidebarIsOpen={setSidebarIsOpen}
+            sidebarIsOpen={sidebarIsOpen}
+            sidebarCategories={sidebarCategories}
+          />
+          <SidebarLinks
+            setSidebarIsOpen={setSidebarIsOpen}
+            sidebarIsOpen={sidebarIsOpen}
+            sidebarCategories={sidebarCategories}
+          />
+        </div>
+
+        <div className={Style.sideBarBottom}></div>
       </div>
-      <SidebarLinks
-        setSidebarIsOpen={setSidebarIsOpen}
-        sidebarIsOpen={sidebarIsOpen}
-        sidebarCategories={sidebarCategories}
-      />
     </div>
   );
 };
@@ -67,7 +81,12 @@ const SidebarLinks: React.FC<SidebarLinksProps> = ({
     <div>
       {sidebarCategories.map((category, i) => (
         <div key={i}>
-          <div className={Style.divider} />
+          <div
+            className={Style.divider}
+            style={{
+              display: !category.categoryTitle ? "" : "none",
+            }}
+          />
           <p className={Style.categoryHeading}>{category.categoryTitle}</p>
           <ul>
             {category.routes.map((route) => (
@@ -94,24 +113,17 @@ const NavMenu: React.FC<NavMenuProps> = ({ route, setSidebarIsOpen }) => {
   const pathname = usePathname();
 
   return (
-    <div>
-      <li
-        style={{
-          marginBottom: route.subRoutes.length !== 0 ? "0" : "",
-        }}
-        className={
-          pathname === "/route1" ? Style.linkWrapperActive : Style.linkWrapper
-        }
-        onClick={() => {
-          setSidebarIsOpen(false);
-        }}
-      >
-        <div className={Style.iconWrapper}>
-          <IoIosCheckboxOutline className={Style.icon} />
-        </div>
-        <Link href={route.path}>{route.title}</Link>
-      </li>
-    </div>
+    <li
+      className={
+        pathname === route.path ? Style.linkWrapperActive : Style.linkWrapper
+      }
+      onClick={() => {
+        setSidebarIsOpen(false);
+      }}
+    >
+      <div className={Style.iconWrapper}>{route.icon} </div>
+      <Link href={route.path}>{route.title}</Link>
+    </li>
   );
 };
 
