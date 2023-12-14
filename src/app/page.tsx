@@ -1,9 +1,10 @@
-import HomeView from "./home/page";
+import InfoCards from "@/app/temporary/infoCards/InfoCards";
 
 export default function Home() {
   return (
     <main>
-      <HomeView />
+      <h1>Home</h1>
+      <InfoCards />
     </main>
   );
 }
