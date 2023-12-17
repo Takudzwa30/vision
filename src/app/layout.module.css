@@ -28,9 +28,9 @@
 }
 
 .outlet {
-  padding: 15px;
   max-width: 1440px;
   margin-inline: auto;
+  padding-inline: 15px;
 }
 
 @media screen and (max-width: 768px) {
