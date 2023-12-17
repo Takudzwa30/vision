@@ -53,11 +53,6 @@ const Sidebar: React.FC<SidebarProps> = ({
             sidebarIsOpen={sidebarIsOpen}
             sidebarCategories={sidebarCategories}
           />
-          <SidebarLinks
-            setSidebarIsOpen={setSidebarIsOpen}
-            sidebarIsOpen={sidebarIsOpen}
-            sidebarCategories={sidebarCategories}
-          />
         </div>
 
         <div className={Style.sideBarBottom}></div>
