@@ -4,13 +4,13 @@
   left: 0;
   height: calc(100% - 20px);
   overflow-y: auto;
-  
-/* todo : fix the border radius to appear always  */
+
+  /* todo : fix the border radius to appear always  */
 }
 
 .sideBarWrapper::-webkit-scrollbar {
   width: 2px;
-  /* display the scrollbar  */
+  /* todo : display the scrollbar  */
   display: none;
 }
 
@@ -46,16 +46,6 @@
   justify-content: center;
   text-align: center;
   width: 100%;
-}
-
-.sideBarBottom {
-  background: url("../../../assets/images/sideBarBottomBG.png") center / cover
-      no-repeat,
-    #0075ff;
-  border-radius: 15px;
-  width: 100%;
-  margin-top: auto;
-  height: 200px;
 }
 
 .sideBar::-webkit-scrollbar-thumb,
@@ -140,21 +130,82 @@
   text-decoration: none;
 }
 
-/* .sideBarWrapper {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  height: calc(100% - 20px);
-  border-radius: 4px;
-  background: red;
-  width: 200px;
-  overflow-y: auto;
+.sideBarBottom {
+  background: url("../../../assets/images/sideBarBottomBG.png") center / cover
+      no-repeat,
+    #0075ff;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
 }
 
-.content {
-  background: lime;
-  height: 300vh;
-  margin: 20px;
-  padding: 20px;
-  overflow-y: auto;
-} */
+.help {
+  background: #fff;
+  padding: 7px;
+  color: #0075ff;
+  border-radius: 12px;
+  display: flex;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.help svg {
+  width: 27px;
+  height: 25px;
+}
+
+.sideBarBottom h5 {
+  color: var(--black-amp-white-white, #fff);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sideBarBottom h6 {
+  color: var(--black-amp-white-white, #fff);
+  font-size: 12px;
+  font-weight: 400;
+  margin-block: 5px 15px;
+}
+
+.documentation {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: linear-gradient(
+    127deg,
+    rgba(6, 11, 40, 0.74) 28.26%,
+    rgba(10, 14, 35, 0.71) 91.2%
+  );
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.documentation:hover {
+  color: transparent;
+}
+
+.documentation:hover::after {
+  content: "Coming Soon";
+  display: block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.documentation:hover::after {
+  opacity: 1;
+}
+
+.documentation:not(:hover) {
+  transition: color 0.3s ease;
+}

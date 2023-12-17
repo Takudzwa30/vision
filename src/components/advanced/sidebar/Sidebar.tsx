@@ -4,7 +4,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IoHome } from "react-icons/io5";
+
+// Icons
+import { IoHelpCircle } from "react-icons/io5";
 
 // Images
 import sideBarLogo from "@/assets/logos/sideBarLogo.png";
@@ -55,7 +57,14 @@ const Sidebar: React.FC<SidebarProps> = ({
           />
         </div>
 
-        <div className={Style.sideBarBottom}></div>
+        <div className={Style.sideBarBottom}>
+          <div className={Style.help}>
+            <IoHelpCircle />
+          </div>
+          <h5>Need help?</h5>
+          <h6>Please check our docs</h6>
+          <div className={Style.documentation}>DOCUMENTATION</div>
+        </div>
       </div>
     </div>
   );
