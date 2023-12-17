@@ -1,4 +1,4 @@
-import InfoCards from "@/app/temporary/infoCards/InfoCards";
+import InfoCards from "@/app/home/components/infoCards/InfoCards";
 
 export default function Home() {
   return (
