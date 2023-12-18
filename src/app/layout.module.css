@@ -6,12 +6,12 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100dvh;
+  /* height: 100dvh; */
 }
 
 .sideBar {
   width: 270px;
-  margin: 10px;
+  /* margin: 10px; */
   margin-right: 0;
   background: var(--secondry-bg);
   border-right: 1px var(--divider) solid;
@@ -42,7 +42,7 @@
   .sideBar {
     transition: all 0.25s ease;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-280px);
   }
 
   .outlet {
@@ -56,9 +56,9 @@
   }
 
   .sideBarOpen {
-    width: 250px;
+    /* width: 250px; */
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(0px);
     transition: all 0.25s ease;
   }
 }

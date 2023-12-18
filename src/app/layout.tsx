@@ -40,7 +40,7 @@ export default function RootLayout({
             />
           </div>
           <div className={Style.contentNavBar}>
-            <Navbar />
+            <Navbar sidebarIsOpen={menuOpen} setSidebarIsOpen={setMenuOpen} />
             <div className={Style.outlet}>{children}</div>
           </div>
         </div>
