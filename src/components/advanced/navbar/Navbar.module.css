@@ -1,0 +1,41 @@
+.navBarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 15px;
+  padding-top: 20px;
+}
+
+.hamburger,
+.hamburgerActive {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger,
+  .hamburgerActive {
+    position: relative;
+    z-index: 1670;
+    cursor: pointer;
+    display: block;
+  }
+  .hamburger span,
+  .hamburgerActive span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  .hamburgerActive span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .hamburgerActive span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerActive span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

@@ -1,8 +1,8 @@
 .sideBarWrapper {
-  position: fixed;
+  /* position: fixed; */
   top: 10px;
   left: 0;
-  height: calc(100% - 20px);
+  height: 100%;
   overflow-y: auto;
 
   /* todo : fix the border radius to appear always  */
@@ -28,7 +28,7 @@
   margin-left: 10px;
   margin-block: 10px;
   padding: 20px;
-  width: 270px;
+  /* width: 270px; */
   border-radius: 20px;
   background: linear-gradient(
     112deg,
@@ -208,4 +208,12 @@
 
 .documentation:not(:hover) {
   transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .sideBarWrapper {
+    height: calc(100% - 20px);
+    margin-block: 10px;
+    border-radius: 20px;
+  }
 }
