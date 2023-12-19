@@ -127,7 +127,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ route, setSidebarIsOpen }) => {
       }}
     >
       <div className={Style.iconWrapper}>{route.icon} </div>
-      <div>{route.title}</div>
+      <div className={Style.linkTitle}>{route.title}</div>
     </Link>
   );
 };

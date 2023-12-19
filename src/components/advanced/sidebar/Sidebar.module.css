@@ -120,16 +120,6 @@
   transition: all 0.3s ease;
 }
 
-.linkWrapper a,
-.linkWrapperActive a {
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
 .sideBarBottom {
   background: url("../../../assets/images/sideBarBottomBG.png") center / cover
       no-repeat,

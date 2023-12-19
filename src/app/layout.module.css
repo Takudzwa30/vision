@@ -6,12 +6,10 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  /* height: 100dvh; */
 }
 
 .sideBar {
   width: 270px;
-  /* margin: 10px; */
   margin-right: 0;
   background: var(--secondry-bg);
   border-right: 1px var(--divider) solid;
