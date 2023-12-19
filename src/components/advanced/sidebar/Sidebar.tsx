@@ -117,17 +117,18 @@ const NavMenu: React.FC<NavMenuProps> = ({ route, setSidebarIsOpen }) => {
   const pathname = usePathname();
 
   return (
-    <li
+    <Link
       className={
         pathname === route.path ? Style.linkWrapperActive : Style.linkWrapper
       }
+      href={route.path}
       onClick={() => {
         setSidebarIsOpen(false);
       }}
     >
       <div className={Style.iconWrapper}>{route.icon} </div>
-      <Link href={route.path}>{route.title}</Link>
-    </li>
+      <div>{route.title}</div>
+    </Link>
   );
 };
 
