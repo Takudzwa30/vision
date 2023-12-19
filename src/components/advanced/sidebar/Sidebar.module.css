@@ -216,4 +216,8 @@
     margin-block: 10px;
     border-radius: 20px;
   }
+
+  .sideBar {
+    padding: 15px;
+  }
 }
