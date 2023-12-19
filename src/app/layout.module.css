@@ -56,7 +56,6 @@
   }
 
   .sideBarOpen {
-    /* width: 250px; */
     opacity: 1;
     transform: translateX(0px);
     transition: all 0.25s ease;
