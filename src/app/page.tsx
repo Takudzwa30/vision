@@ -1,10 +1,10 @@
-import InfoCards from "@/app/home/components/infoCards/InfoCards";
+// Components
+import HomeView from "./home/HomeView";
 
 export default function Home() {
   return (
     <main>
-      <h1>Home</h1>
-      <InfoCards />
+      <HomeView />
     </main>
   );
 }

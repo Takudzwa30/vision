@@ -1,8 +1,11 @@
+// Components
+import InfoCards from "./components/infoCards/InfoCards";
+
 const HomeView: React.FC = () => {
   return (
-    <div>
-      <h1>HomeView</h1>
-    </div>
+    <main>
+      <InfoCards />
+    </main>
   );
 };
 export default HomeView;
