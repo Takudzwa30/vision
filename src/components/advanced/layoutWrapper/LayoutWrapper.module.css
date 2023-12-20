@@ -4,8 +4,10 @@
   background-image: url("../../../assets/images/mainLayoutBG.png");
   background-color: #060b26;
   background-size: cover;
+  min-height: 100dvh;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-bottom: 15px;
 }
 
 .sideBar {
