@@ -56,7 +56,6 @@ const Sidebar: React.FC<SidebarProps> = ({
             sidebarCategories={sidebarCategories}
           />
         </div>
-
         <div className={Style.sideBarBottom}>
           <div className={Style.help}>
             <IoHelpCircle />

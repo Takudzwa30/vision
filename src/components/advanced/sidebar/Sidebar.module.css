@@ -1,34 +1,21 @@
 .sideBarWrapper {
-  /* position: fixed; */
-  top: 10px;
   left: 0;
   height: 100%;
   overflow-y: auto;
-
-  /* todo : fix the border radius to appear always  */
-}
-
-.sideBarWrapper::-webkit-scrollbar {
-  width: 2px;
-  /* todo : display the scrollbar  */
-  display: none;
-}
-
-.sideBarWrapper::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 6px;
-}
-
-.sideBarWrapper::-webkit-scrollbar-track {
-  background-color: #eee;
+  position: relative;
 }
 
 .sideBar {
-  min-height: calc(100vh - 40px);
+  position: fixed;
+  width: 260px;
+  height: calc(100vh - 20px);
+
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+
   margin-left: 10px;
   margin-block: 10px;
   padding: 20px;
-  /* width: 270px; */
   border-radius: 20px;
   background: linear-gradient(
     112deg,
@@ -41,16 +28,24 @@
   gap: 30px;
 }
 
+.sideBar::-webkit-scrollbar {
+  width: 2px;
+  height: 85%;
+}
+
+.sideBar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
 .logoWrapper {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 100%;
-}
-
-.sideBar::-webkit-scrollbar-thumb,
-.sideBarOpen::-webkit-scrollbar-thumb {
-  background: var(--primary-black);
 }
 
 .categoryHeading {
@@ -202,8 +197,6 @@
 
 @media screen and (max-width: 768px) {
   .sideBarWrapper {
-    height: calc(100% - 20px);
-    margin-block: 10px;
     border-radius: 20px;
   }
 
