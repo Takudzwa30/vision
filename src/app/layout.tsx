@@ -4,9 +4,6 @@ import type { Metadata } from "next";
 // Components
 import { LayoutWrapper } from "@/components/advanced";
 
-// Routes
-import { sidebarCategories } from "@/data/routes";
-
 // Fonts
 import { Inter } from "next/font/google";
 // TODO : CHECK FOR THE DESIRED FONT IN THE NEXT/FONT
@@ -19,15 +16,6 @@ export const metadata: Metadata = {
   title: {
     template: "%s | Vision",
     default: "Vision",
-  },
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/shortcut-icon.png",
-    apple: "/apple-icon.png",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/apple-touch-icon-precomposed.png",
-    },
   },
   description: "Vision Dashboard built with Next js and Typescript",
 };
