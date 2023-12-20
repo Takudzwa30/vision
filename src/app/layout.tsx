@@ -15,13 +15,19 @@ const inter = Inter({ subsets: ["latin"] });
 // Styles
 import "@/assets/css/index.css";
 
-// Function
-const getTitle = () => {};
-
 export const metadata: Metadata = {
   title: {
-    template: "Vision | %s",
+    template: "%s | Vision",
     default: "Vision",
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/shortcut-icon.png",
+    apple: "/apple-icon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/apple-touch-icon-precomposed.png",
+    },
   },
   description: "Vision Dashboard built with Next js and Typescript",
 };
@@ -33,7 +39,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body>
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
