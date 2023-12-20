@@ -1,5 +1,11 @@
 "use client";
+
+// Hooks
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+
+// Routes
+import { sidebarCategories } from "@/data/routes";
 
 // Styles
 import Style from "./Navbar.module.css";
@@ -17,6 +23,21 @@ const Navbar: React.FC<SidebarProps> = ({
 
   // Hooks
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  // Functions
+  const getPageTitle = (currentPath: string) => {
+    for (const category of sidebarCategories) {
+      for (const route of category.routes) {
+        if (route.path === currentPath) {
+          return route.title;
+        }
+      }
+    }
+    return "Unknown Page";
+  };
+
+  const pageTitle = getPageTitle(pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +53,7 @@ const Navbar: React.FC<SidebarProps> = ({
 
   return (
     <div className={isScrolled ? Style.navBarScrolled : Style.navBarWrapper}>
-      <div className={Style.title}>Dashboard</div>
+      <div className={Style.title}>{pageTitle}</div>
       <div className={Style.nav}>
         <div
           className={sidebarIsOpen ? Style.hamburgerActive : Style.hamburger}
