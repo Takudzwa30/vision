@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 
 // Components
-import LayoutWrapper from "@/components/layoutWrapper/LayoutWrapper";
+import { LayoutWrapper } from "@/components/advanced";
 
 // Routes
 import { sidebarCategories } from "@/data/routes";
@@ -16,9 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 import "@/assets/css/index.css";
 
 // Function
-const getTitle =()=>{
-  
-}
+const getTitle = () => {};
 
 export const metadata: Metadata = {
   title: {
