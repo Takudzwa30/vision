@@ -1,4 +1,5 @@
-// Libraries
+"use client";
+import { useEffect, useState } from "react";
 
 // Styles
 import Style from "./Navbar.module.css";
@@ -13,15 +14,30 @@ const Navbar: React.FC<SidebarProps> = ({
   setSidebarIsOpen,
 }) => {
   // TODO : create a wrapper component with common inline padding for all components
+
+  // Hooks
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 0;
+      setIsScrolled(scrolled);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={Style.navBarWrapper}>
+    <div className={isScrolled ? Style.navBarScrolled : Style.navBarWrapper}>
       <div className={Style.title}>Dashboard</div>
       <div className={Style.nav}>
         <div
           className={sidebarIsOpen ? Style.hamburgerActive : Style.hamburger}
           onClick={() => {
             setSidebarIsOpen((old: boolean) => !old);
-            document.documentElement.scrollTop = 0;
           }}
         >
           <span></span>

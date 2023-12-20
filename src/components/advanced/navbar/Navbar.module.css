@@ -1,11 +1,27 @@
 .navBarWrapper {
+  padding-top: 20px;
+  margin-bottom: 1.875rem;
+  transition: all 0.1s ease;
+}
+
+.navBarScrolled,
+.navBarWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding-inline: 15px;
-  padding-top: 20px;
-  margin-bottom: 1.875rem;
+}
+
+.navBarScrolled {
+  transition: all 0.1s ease;
+  backdrop-filter: blur(60px);
+
+  position: fixed;
+  /* top: 0; */
+  z-index: 23;
+  width: 100%;
+  height: 50px;
 }
 
 .hamburger,
