@@ -4,12 +4,19 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
+// Libraries
+import Link from "next/link";
+
 // Routes
 import { sidebarCategories } from "@/data/routes";
+
+// Icons
+import { IoPerson, IoNotifications, IoSearch } from "react-icons/io5";
 
 // Styles
 import Style from "./Navbar.module.css";
 
+// Types
 interface SidebarProps {
   setSidebarIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   sidebarIsOpen: boolean;
@@ -55,6 +62,15 @@ const Navbar: React.FC<SidebarProps> = ({
     <div className={isScrolled ? Style.navBarScrolled : Style.navBarWrapper}>
       <div className={Style.title}>{pageTitle}</div>
       <div className={Style.nav}>
+        <div className={Style.searchFieldWrapper}>
+          <IoSearch />
+          <input placeholder="Type here..." type="text" />
+        </div>
+        <Link href={"/signin"} className={Style.signin}>
+          <IoPerson />
+          <p>Sign In</p>
+        </Link>
+        <IoNotifications className={Style.navIcon} />
         <div
           className={sidebarIsOpen ? Style.hamburgerActive : Style.hamburger}
           onClick={() => {
