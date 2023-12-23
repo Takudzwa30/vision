@@ -43,9 +43,14 @@
 
 .logoWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   width: 100%;
+}
+
+.hamburgerActive {
+  display: none;
 }
 
 .categoryHeading {
@@ -202,5 +207,29 @@
 
   .sideBar {
     padding: 15px;
+  }
+
+  .hamburgerActive {
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
+
+  .hamburgerActive span {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  .hamburgerActive span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+  }
+  .hamburgerActive span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerActive span:nth-child(3) {
+    transform: rotate(-45deg) translate(3.5px, -3.5px);
   }
 }

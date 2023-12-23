@@ -49,6 +49,16 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div>
           <div className={Style.logoWrapper}>
             <Image src={sideBarLogo} alt="Logo" />
+            <div
+              className={Style.hamburgerActive}
+              onClick={() => {
+                setSidebarIsOpen((old: boolean) => !old);
+              }}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
           <SidebarLinks
             setSidebarIsOpen={setSidebarIsOpen}
