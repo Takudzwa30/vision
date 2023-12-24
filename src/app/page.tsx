@@ -1,10 +1,13 @@
 // Components
-import HomeView from "./home/HomeView";
+import HomeView from "./(main)/home/HomeView";
+import MainLayout from "./(main)/layout";
 
 export default function Home() {
   return (
     <main>
-      <HomeView />
+      <MainLayout>
+        <HomeView />
+      </MainLayout>
     </main>
   );
 }

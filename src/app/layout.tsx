@@ -1,9 +1,6 @@
 // Metadata
 import type { Metadata } from "next";
 
-// Components
-import { LayoutWrapper } from "@/components/advanced";
-
 // Fonts
 import { Inter } from "next/font/google";
 // TODO : CHECK FOR THE DESIRED FONT IN THE NEXT/FONT
@@ -47,9 +44,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body>
-        <LayoutWrapper>{children}</LayoutWrapper>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 // Components
-import CardWrapper from "../../../../components/ui/cardWrapper/CardWrapper";
+import CardWrapper from "../../../../../components/ui/cardWrapper/CardWrapper";
 
 // Icons
 import { IoGlobeOutline } from "react-icons/io5";
