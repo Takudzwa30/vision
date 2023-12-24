@@ -3,7 +3,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* gap: 40px; */
   background: linear-gradient(
     159deg,
     #0f123b 14.25%,

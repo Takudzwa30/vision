@@ -1,14 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Libraries
 import { Formik, Field, Form, FormikHelpers } from "formik";
+import Link from "next/link";
+
+// Components
+import ToggleSwitch from "@/components/ui/toggleSwitch/ToggleSwitch";
 
 // Styles
 import Style from "./SigninView.module.css";
-import ToggleSwitch from "@/components/ui/toggleSwitch/ToggleSwitch";
-import Link from "next/link";
 
 // Types
 interface Values {
@@ -18,11 +20,14 @@ interface Values {
 }
 
 const SigninView: React.FC = () => {
+  // Hooks
   const [isChecked, setChecked] = useState(false);
 
+  // Functions
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setChecked(event.target.checked);
   };
+
   return (
     <div className={Style.signin}>
       <div className={Style.titles}>
