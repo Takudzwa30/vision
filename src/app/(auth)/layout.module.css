@@ -42,7 +42,6 @@
 
 .content {
   height: 100%;
-  background: red;
   padding-inline: 40px;
   display: flex;
   flex-direction: column;
