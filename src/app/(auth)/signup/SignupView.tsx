@@ -98,9 +98,9 @@ const SignupView: React.FC = () => {
         </Form>
       </Formik>
       <div className={Style.signupWrapper}>
-        Don't have an account?{" "}
+        Already have an account?
         <span>
-          <Link href="/signup">Sign up</Link>
+          <Link href="/signin">Sign in</Link>
         </span>
       </div>
     </div>
