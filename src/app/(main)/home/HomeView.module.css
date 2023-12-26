@@ -1,0 +1,14 @@
+.infoCards,
+.userDetails {
+  margin-bottom: 25px;
+}
+
+.userDetails {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 25px;
+}
+
+.two {
+  background-color: red;
+}
