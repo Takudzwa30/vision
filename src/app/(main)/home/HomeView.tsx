@@ -1,9 +1,11 @@
 // Components
 import InfoCards from "./components/infoCards/InfoCards";
 import UserDetails from "./components/userDetails/UserDetails";
+import Satisfaction from "./components/satisfaction/Satisfaction";
 
 // Styles
 import Style from "./HomeView.module.css";
+import Referral from "./components/referral/Referral";
 
 const HomeView: React.FC = () => {
   return (
@@ -13,8 +15,8 @@ const HomeView: React.FC = () => {
       </section>
       <section className={Style.userDetails}>
         <UserDetails />
-        <div className={Style.two}></div>
-        <div className={Style.two}></div>
+        <Satisfaction />
+        <Referral />
       </section>
     </main>
   );
