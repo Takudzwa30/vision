@@ -36,13 +36,13 @@ export const sidebarCategories = [
         icon: <IoPerson />,
       },
       {
-        path: "/sign-in",
+        path: "/signin",
         title: "Sign In",
         subRoutes: [],
         icon: <IoDocument />,
       },
       {
-        path: "/sign-up",
+        path: "/signup",
         title: "Sign Up",
         subRoutes: [],
         icon: <IoRocketSharp />,
