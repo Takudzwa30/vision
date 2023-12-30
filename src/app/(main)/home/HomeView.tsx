@@ -19,7 +19,7 @@ const HomeView: React.FC = () => {
         <Satisfaction />
         <Referral />
       </section>
-      <section>
+      <section className={Style.salesAndUsers}>
         <Sales />
       </section>
     </main>
