@@ -4,11 +4,8 @@ import { ReactNode } from "react";
 import CardWrapper from "../../../../../components/ui/cardWrapper/CardWrapper";
 
 // Icons
-import { IoGlobeOutline } from "react-icons/io5";
 import { FaGlobe } from "react-icons/fa6";
-import { IoWallet } from "react-icons/io5";
-import { IoDocumentText } from "react-icons/io5";
-import { IoCartSharp } from "react-icons/io5";
+import { IoWallet, IoDocumentText, IoCartSharp } from "react-icons/io5";
 
 // Styles
 import Style from "./InfoCards.module.css";
