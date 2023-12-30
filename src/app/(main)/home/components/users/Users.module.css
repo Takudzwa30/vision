@@ -1,0 +1,74 @@
+.chartWrapper {
+  border-radius: 20px;
+  background: linear-gradient(
+    127deg,
+    #060c29 28.26%,
+    rgba(4, 12, 48, 0.5) 91.2%
+  );
+}
+
+.headings {
+  margin-block: 25px;
+}
+
+.headings p {
+  color: #01b574;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  margin-block: 6px 20px;
+}
+
+.headings p span {
+  color: #a0aec0;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.titleWrapper h6 {
+  color: #a0aec0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 6px;
+  padding: 6px;
+  background: #0075ff;
+  box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.iconWrapper svg {
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.card h5 {
+  margin-block: 8px;
+}
+
+.progressBar {
+  background: #2d2e5f;
+  height: 2px;
+  border-radius: 20px;
+}
+
+.progressBar > div {
+  height: 100%;
+  background: #0075ff;
+}

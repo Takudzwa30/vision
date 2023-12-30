@@ -43,9 +43,9 @@ const Referral: React.FC = () => {
             }}
             value={70}
             size={
-              window.innerWidth >= 1300
+              window?.innerWidth >= 1300
                 ? 200
-                : window.innerWidth >= 768
+                : window?.innerWidth >= 768
                 ? 170
                 : 200
             }

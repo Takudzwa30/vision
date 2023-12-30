@@ -24,7 +24,6 @@
 .salesAndUsers {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
   gap: 20px;
 }
 
@@ -34,4 +33,14 @@
 
 .salesAndUsers > :nth-child(2) {
   grid-column: span 5;
+}
+
+@media screen and (max-width: 1300px) {
+  .salesAndUsers > :nth-child(1) {
+    grid-column: span 12;
+  }
+
+  .salesAndUsers > :nth-child(2) {
+    grid-column: span 12;
+  }
 }
