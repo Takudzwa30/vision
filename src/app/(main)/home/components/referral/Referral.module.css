@@ -10,6 +10,14 @@
   gap: 10px;
 }
 
+.progressWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 .card {
   padding: 20px;
   border-radius: 20px;
@@ -18,7 +26,6 @@
     #060c29 28.26%,
     rgba(4, 12, 48, 0.5) 91.2%
   );
-  /* backdrop-filter: blur(60px); */
   margin-bottom: 20px;
 }
 
@@ -41,7 +48,13 @@
 .score {
   text-align: center;
   position: absolute;
-  top: 44%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }

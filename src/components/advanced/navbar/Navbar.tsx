@@ -26,7 +26,6 @@ const Navbar: React.FC<SidebarProps> = ({
   sidebarIsOpen,
   setSidebarIsOpen,
 }) => {
-  // TODO : create a wrapper component with common inline padding for all components
 
   // Hooks
   const [isScrolled, setIsScrolled] = useState(false);

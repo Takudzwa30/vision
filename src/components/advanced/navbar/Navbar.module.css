@@ -149,3 +149,23 @@
     transform: rotate(-45deg) translate(3.5px, -3.5px);
   }
 }
+
+@media screen and (max-width: 576px) {
+  .navBarScrolled,
+  .navBarWrapper {
+    justify-content: flex-end;
+  }
+
+  .navBarScrolled {
+    padding: 15px;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .signin p,
+  .title {
+    display: none;
+  }
+}

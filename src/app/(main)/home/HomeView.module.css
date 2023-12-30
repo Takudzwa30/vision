@@ -49,6 +49,18 @@
   grid-column: span 4;
 }
 
+@media screen and (max-width: 1400px) {
+  .userDetails > :nth-child(1) {
+    grid-column: span 12;
+  }
+  .userDetails > :nth-child(2) {
+    grid-column: span 6;
+  }
+  .userDetails > :nth-child(3) {
+    grid-column: span 6;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .salesAndUsers > :nth-child(1) {
     grid-column: span 12;
@@ -65,6 +77,15 @@
   }
 
   .projectsAndOrders > :nth-child(2) {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .userDetails > :nth-child(2) {
+    grid-column: span 12;
+  }
+  .userDetails > :nth-child(3) {
     grid-column: span 12;
   }
 }
