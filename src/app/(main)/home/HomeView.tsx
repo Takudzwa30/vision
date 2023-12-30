@@ -27,6 +27,7 @@ const HomeView: React.FC = () => {
       </section>
       <section className={Style.projectsAndOrders}>
         <Orders />
+        <Orders />
       </section>
     </main>
   );
