@@ -20,7 +20,6 @@ const Satisfaction: React.FC = () => {
           variant="determinate"
           style={{
             marginBottom: "20px",
-            borderRadius: "50%",
             strokeLinecap: "round",
           }}
           value={90}
