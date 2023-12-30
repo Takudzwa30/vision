@@ -99,6 +99,7 @@ const Sales: React.FC = () => {
     ],
   };
 
+
   return (
     <CardWrapper>
       <div className={Style.headings}>

@@ -5,10 +5,23 @@
 
 .userDetails {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.5fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
   gap: 25px;
 }
 
+.userDetails > :nth-child(1) {
+  grid-column: span 5;
+
+}
+.userDetails > :nth-child(2) {
+  grid-column: span 3;
+
+}
+.userDetails > :nth-child(3) {
+  grid-column: span 4;
+
+}
+
 @media screen and (max-width: 1300px) {
-  
 }
