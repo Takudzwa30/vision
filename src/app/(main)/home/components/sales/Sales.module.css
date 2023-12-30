@@ -1,0 +1,13 @@
+.headings p {
+  color: #01b574;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  margin-block: 6px 20px;
+}
+
+.headings p span {
+  color: #a0aec0;
+  font-weight: 400;
+  line-height: normal;
+}

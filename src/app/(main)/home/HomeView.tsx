@@ -6,6 +6,7 @@ import Referral from "./components/referral/Referral";
 
 // Styles
 import Style from "./HomeView.module.css";
+import Sales from "./components/sales/Sales";
 
 const HomeView: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ const HomeView: React.FC = () => {
         <UserDetails />
         <Satisfaction />
         <Referral />
+      </section>
+      <section>
+        <Sales />
       </section>
     </main>
   );
