@@ -7,6 +7,7 @@ import Referral from "./components/referral/Referral";
 // Styles
 import Style from "./HomeView.module.css";
 import Sales from "./components/sales/Sales";
+import Users from "./components/users/Users";
 
 const HomeView: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const HomeView: React.FC = () => {
       </section>
       <section className={Style.salesAndUsers}>
         <Sales />
+        <Users />
       </section>
     </main>
   );

@@ -1,14 +1,14 @@
 .infoCards,
 .userDetails,
 .salesAndUsers {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .userDetails {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
-  gap: 25px;
+  gap: 20px;
 }
 
 .userDetails > :nth-child(1) {
@@ -21,5 +21,17 @@
   grid-column: span 4;
 }
 
-/* @media screen and (max-width: 1300px) {
-} */
+.salesAndUsers {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.salesAndUsers > :nth-child(1) {
+  grid-column: span 7;
+}
+
+.salesAndUsers > :nth-child(2) {
+  grid-column: span 5;
+}
