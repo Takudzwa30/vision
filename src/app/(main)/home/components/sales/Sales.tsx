@@ -1,7 +1,7 @@
 "use client";
 
 // Libraries
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 // Components
 import CardWrapper from "@/components/ui/cardWrapper/CardWrapper";
@@ -9,8 +9,7 @@ import CardWrapper from "@/components/ui/cardWrapper/CardWrapper";
 // Styles
 import Style from "./Sales.module.css";
 
-const SalesChart = dynamic(() => import('react-apexcharts'), { ssr: false });
-
+const SalesChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const Sales: React.FC = () => {
   // Variables
@@ -99,7 +98,6 @@ const Sales: React.FC = () => {
     ],
   };
 
-
   return (
     <CardWrapper>
       <div className={Style.headings}>
@@ -113,6 +111,7 @@ const Sales: React.FC = () => {
         series={chartOptions?.series}
         type="area"
         height={350}
+        width={"100%"}
       />
     </CardWrapper>
   );
