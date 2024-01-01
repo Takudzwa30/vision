@@ -18,13 +18,13 @@ import Style from "./CardDetails.module.css";
 
 const CardDetails: React.FC = () => {
   return (
-    <>
+    <div>
       <section className={Style.cardDetails}>
         <CreditCard />
         <CreditBalance />
       </section>
       <PaymentMethod />
-    </>
+    </div>
   );
 };
 
