@@ -10,8 +10,8 @@ const BillingView: React.FC = () => {
     <main>
       <section className={Style.cardAndInvoices}>
         <CardDetails />
+        <Invoices />
       </section>
-      <Invoices />
     </main>
   );
 };
