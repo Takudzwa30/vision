@@ -1,5 +1,6 @@
 // Components
 import CardDetails from "./components/cardDetails/CardDetails";
+import Invoices from "./components/invoices/Invoices";
 
 // Styles
 import Style from "./BillingView.module.css";
@@ -7,7 +8,10 @@ import Style from "./BillingView.module.css";
 const BillingView: React.FC = () => {
   return (
     <main>
-      <CardDetails />
+      <section className={Style.cardAndInvoices}>
+        <CardDetails />
+      </section>
+      <Invoices />
     </main>
   );
 };
