@@ -1,0 +1,25 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.heading h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.date p {
+  color: #a0aec0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
