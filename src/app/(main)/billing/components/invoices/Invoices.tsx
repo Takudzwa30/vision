@@ -50,15 +50,15 @@ const Invoices: React.FC = () => {
         <div className={Style.addNewCard}>VIEW ALL</div>
       </div>
       <div className={Style.invoices}>
-        {invoices.map(() => {
+        {invoices.map((item, index) => {
           return (
-            <div className={Style.invoice}>
+            <div key={index} className={Style.invoice}>
               <div className={Style.invoiceLeft}>
-                <h6>March, 01, 2020</h6>
-                <p>#MS-415646</p>
+                <h6>{item.date}</h6>
+                <p>{item.invoiceNumber}</p>
               </div>
               <div className={Style.invoiceRight}>
-                <p>$180</p>
+                <p>${item.amount}</p>
                 <div className={Style.pdf}>
                   <IoDocumentText />
                   <p>PDF</p>
