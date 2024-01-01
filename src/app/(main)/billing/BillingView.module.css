@@ -1,15 +1,18 @@
-.cardAndInvoices {
+.cardAndInvoices,
+.billingAndTransactions {
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
 }
 
-.cardAndInvoices > :nth-child(1) {
+.cardAndInvoices > :nth-child(1),
+.billingAndTransactions > :nth-child(1) {
   grid-column: span 7;
 }
 
-.cardAndInvoices > :nth-child(2) {
+.cardAndInvoices > :nth-child(2),
+.billingAndTransactions > :nth-child(2) {
   grid-column: span 5;
 }
 
