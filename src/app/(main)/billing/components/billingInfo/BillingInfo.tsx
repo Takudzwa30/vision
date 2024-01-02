@@ -15,6 +15,8 @@ const BillingInfo: React.FC = () => {
       <h5 className={Style.title}>Billing Information</h5>
       <div className={Style.billsGrid}>
         <Bill />
+        <Bill />
+        <Bill />
       </div>
     </CardWrapper>
   );

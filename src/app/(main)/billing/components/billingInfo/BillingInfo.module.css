@@ -4,6 +4,12 @@
   margin-bottom: 20px;
 }
 
+.billsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
 .bill {
   display: flex;
   justify-content: space-between;
@@ -46,4 +52,15 @@
 
 .edit p {
   color: #a0aec0;
+}
+
+@media screen and (max-width: 576px) {
+  .bill {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .actions {
+    justify-content: space-between;
+  }
 }
