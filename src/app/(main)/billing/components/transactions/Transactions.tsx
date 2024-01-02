@@ -102,39 +102,55 @@ const Transaction: React.FC<Category> = ({ categoryTitle, transactions }) => {
   return (
     <>
       <h6 className={Style.categoryTitle}>{categoryTitle}</h6>
-      {transactions.map((item, index) => {
-        return (
-          <div key={index} className={Style.transaction}>
-            <div className={Style.subWrapper}>
-              <div className={Style.pending}>
-                {item.status === "pending" ? (
-                  <FaExclamation />
-                ) : (
-                  <IoArrowDownOutline />
-                )}
+      <div className={Style.transGrid}>
+        {transactions.map((item, index) => {
+          let className;
+
+          switch (item.status) {
+            case "pending":
+              className = Style.pending;
+              break;
+            case "increase":
+              className = Style.increase;
+              break;
+            case "decrease":
+              className = Style.decrease;
+              break;
+          }
+
+          return (
+            <div key={index} className={Style.transaction}>
+              <div className={Style.subWrapper}>
+                <div className={className}>
+                  {item.status === "pending" ? (
+                    <FaExclamation />
+                  ) : (
+                    <IoArrowDownOutline />
+                  )}
+                </div>
+                <div className={Style.transactionInfo}>
+                  <h6>{item.title}</h6>
+                  <p>{item.date}</p>
+                </div>
               </div>
-              <div className={Style.transactionInfo}>
-                <h6>{item.title}</h6>
-                <p>{item.date}</p>
-              </div>
+              {item.status === "pending" ? (
+                <p className={Style.pendingValue}>Pending</p>
+              ) : (
+                <p
+                  className={
+                    item.status === "increase"
+                      ? Style.positiveValue
+                      : Style.negativeValue
+                  }
+                >
+                  {item.status === "increase" ? "+" : "-"}
+                  {item.value}
+                </p>
+              )}
             </div>
-            {item.status === "pending" ? (
-              <p className={Style.pendingValue}>Pending</p>
-            ) : (
-              <p
-                className={
-                  item.status === "increase"
-                    ? Style.positiveValue
-                    : Style.negativeValue
-                }
-              >
-                {item.status === "increase" ? "+" : "-"}
-                {item.value}
-              </p>
-            )}
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 };
