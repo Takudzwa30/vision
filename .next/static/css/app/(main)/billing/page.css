@@ -301,7 +301,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .Transactions_heading__U6S8x h5 {
@@ -324,9 +323,16 @@
 
 .Transactions_categoryTitle__1Bcs3 {
   color: #a0aec0;
-  margin-bottom: 20px;
+  margin-block: 20px;
   font-weight: 400;
   line-height: normal;
+}
+
+.Transactions_transGrid__h4rIC {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap: 20px;
 }
 
 .Transactions_transaction__1USct {
@@ -347,6 +353,7 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,6 +411,13 @@
   margin-bottom: 20px;
 }
 
+.BillingInfo_billsGrid__ETRTP {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
 .BillingInfo_bill__da0MX {
   display: flex;
   justify-content: space-between;
@@ -446,6 +460,17 @@
 
 .BillingInfo_edit__TPbjt p {
   color: #a0aec0;
+}
+
+@media screen and (max-width: 576px) {
+  .BillingInfo_bill__da0MX {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .BillingInfo_actions__ce3iu {
+    justify-content: space-between;
+  }
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
