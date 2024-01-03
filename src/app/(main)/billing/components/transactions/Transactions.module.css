@@ -1,0 +1,103 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.date p {
+  color: #a0aec0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.categoryTitle {
+  color: #a0aec0;
+  margin-block: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.transGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subWrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.increase,
+.decrease,
+.pending {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.increase {
+  border: 1px solid #01b574;
+}
+
+.positiveValue,
+.increase {
+  color: #01b574;
+}
+
+.increase svg {
+  rotate: 180deg;
+}
+
+.decrease {
+  border: 1px solid #e31a1a;
+}
+
+.negativeValue,
+.decrease {
+  color: #e31a1a;
+}
+
+.pending {
+  border: 1px solid #a0aec0;
+}
+
+.pendingValue,
+.pending {
+  color: #a0aec0;
+}
+
+.transactionInfo h6 {
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.transactionInfo p {
+  color: #a0aec0;
+  font-weight: 400;
+  line-height: normal;
+}

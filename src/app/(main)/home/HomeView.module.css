@@ -1,0 +1,91 @@
+.infoCards,
+.userDetails,
+.salesAndUsers {
+  margin-bottom: 20px;
+}
+
+.userDetails {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.userDetails > :nth-child(1) {
+  grid-column: span 5;
+}
+.userDetails > :nth-child(2) {
+  grid-column: span 3;
+}
+.userDetails > :nth-child(3) {
+  grid-column: span 4;
+}
+
+.salesAndUsers {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.salesAndUsers > :nth-child(1) {
+  grid-column: span 7;
+}
+
+.salesAndUsers > :nth-child(2) {
+  grid-column: span 5;
+}
+
+.projectsAndOrders {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.projectsAndOrders > :nth-child(1) {
+  grid-column: span 8;
+}
+
+.projectsAndOrders > :nth-child(2) {
+  grid-column: span 4;
+}
+
+@media screen and (max-width: 1400px) {
+  .userDetails > :nth-child(1) {
+    grid-column: span 12;
+  }
+  .userDetails > :nth-child(2) {
+    grid-column: span 6;
+  }
+  .userDetails > :nth-child(3) {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .salesAndUsers > :nth-child(1) {
+    grid-column: span 12;
+  }
+
+  .salesAndUsers > :nth-child(2) {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projectsAndOrders > :nth-child(1) {
+    grid-column: span 12;
+  }
+
+  .projectsAndOrders > :nth-child(2) {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .userDetails > :nth-child(2) {
+    grid-column: span 12;
+  }
+  .userDetails > :nth-child(3) {
+    grid-column: span 12;
+  }
+}
