@@ -1,0 +1,62 @@
+.mainLayout {
+  display: flex;
+  overflow: unset;
+  background-image: url("../../../assets/images/mainLayoutBG.png");
+  background-color: #060b26;
+  background-size: cover;
+  min-height: 100dvh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+}
+
+.sideBar {
+  width: 270px;
+  margin-right: 0;
+  border-right: 1px var(--divider) solid;
+  overflow: hidden;
+}
+
+.sideBar,
+.sideBarOpen {
+  flex-shrink: 0;
+}
+
+.contentNavBar {
+  width: 100%;
+}
+
+.outlet {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainLayout {
+    display: block;
+  }
+
+  .sideBar {
+    transition: all 0.25s ease;
+    opacity: 0;
+    transform: translateX(-280px);
+  }
+
+  .outlet {
+    padding-inline: 10px;
+  }
+
+  .sideBar,
+  .sideBarOpen {
+    z-index: 999;
+    position: fixed;
+  }
+
+  .sideBarOpen {
+    width: 280px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.25s ease;
+  }
+}

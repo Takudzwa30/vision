@@ -1,0 +1,235 @@
+.sideBarWrapper {
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.sideBar {
+  position: fixed;
+  width: 260px;
+  height: calc(100vh - 20px);
+
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+
+  margin-left: 10px;
+  margin-block: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    112deg,
+    rgba(6, 11, 38, 0.94) 59.3%,
+    rgba(26, 31, 55, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.sideBar::-webkit-scrollbar {
+  width: 2px;
+  height: 85%;
+}
+
+.sideBar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hamburgerActive {
+  display: none;
+}
+
+.categoryHeading {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.divider {
+  margin-block: 40px 12px;
+  background: #fff;
+  width: 100%;
+  height: 1px;
+}
+
+.linkWrapper,
+.linkWrapperActive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  margin-block: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.linkWrapperActive,
+.linkWrapper:hover {
+  color: #2196f3;
+  background: #1a1f37;
+}
+
+.linkWrapperActive .iconWrapper,
+.linkWrapper:hover .iconWrapper {
+  background: #0075ff;
+}
+
+.linkWrapper .iconWrapper {
+  background: #1a1f37;
+}
+
+.iconWrapper {
+  transition: all 0.3s ease;
+
+  display: flex;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.linkWrapper svg {
+  color: #0075ff;
+}
+
+.linkWrapperActive svg,
+.linkWrapper:hover svg {
+  color: #fff;
+}
+
+.linkWrapper svg,
+.linkWrapperActive svg {
+  width: 15px;
+  height: 15px;
+  transition: all 0.3s ease;
+}
+
+.sideBarBottom {
+  background: url("../../../assets/images/sideBarBottomBG.png") center / cover
+      no-repeat,
+    #0075ff;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.help {
+  background: #fff;
+  padding: 7px;
+  color: #0075ff;
+  border-radius: 12px;
+  display: flex;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.help svg {
+  width: 27px;
+  height: 25px;
+}
+
+.sideBarBottom h5 {
+  color: var(--black-amp-white-white, #fff);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sideBarBottom h6 {
+  color: var(--black-amp-white-white, #fff);
+  font-size: 12px;
+  font-weight: 400;
+  margin-block: 5px 15px;
+}
+
+.documentation {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: linear-gradient(
+    127deg,
+    rgba(6, 11, 40, 0.74) 28.26%,
+    rgba(10, 14, 35, 0.71) 91.2%
+  );
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.documentation:hover {
+  color: transparent;
+}
+
+.documentation:hover::after {
+  content: "Coming Soon";
+  display: block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.documentation:hover::after {
+  opacity: 1;
+}
+
+.documentation:not(:hover) {
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .sideBarWrapper {
+    border-radius: 20px;
+  }
+
+  .sideBar {
+    padding: 15px;
+  }
+
+  .hamburgerActive {
+    position: relative;
+    cursor: pointer;
+    display: block;
+  }
+
+  .hamburgerActive span {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  .hamburgerActive span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, 2px);
+  }
+  .hamburgerActive span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerActive span:nth-child(3) {
+    transform: rotate(-45deg) translate(3.5px, -3.5px);
+  }
+}
