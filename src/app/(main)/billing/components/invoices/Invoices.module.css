@@ -1,0 +1,81 @@
+.heading,
+.invoice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-bottom: 25px;
+}
+
+.heading h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.addNewCard {
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: #0075ff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.addNewCard:hover {
+  background: #fff;
+  color: #0075ff;
+}
+
+.invoices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.invoiceLeft h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.invoiceRight p,
+.invoiceLeft p {
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pdf,
+.invoiceRight {
+  display: flex;
+  align-items: center;
+}
+
+.invoiceRight {
+  gap: 10px;
+}
+
+.pdf {
+  gap: 5px;
+  cursor: pointer;
+}
+
+.pdf svg,
+.pdf p {
+  transition: all ease 0.3s;
+}
+
+.pdf:hover svg {
+  color: #0075ff;
+}
+
+.pdf:hover p {
+  color: #0075ff;
+}

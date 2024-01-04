@@ -1,0 +1,45 @@
+.userWrapper {
+  background: url("../../../../../assets/images/jellyFish.jpg") center / cover
+    no-repeat;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(60px);
+
+  /* TODO : check if this blur is good, to be removed */
+  backdrop-filter: blur(60px);
+}
+
+.userWrapper h6 {
+  color: #a0aec0;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.userWrapper h3 {
+  color: #fff;
+  margin-block: 12px 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.userWrapper h5 {
+  color: #a0aec0;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.record {
+  margin-top: 130px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.record svg {
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
