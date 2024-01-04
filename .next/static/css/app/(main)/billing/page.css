@@ -1,0 +1,527 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(main)/billing/components/cardDetails/CardDetails.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.CardDetails_cardDetails__uie6N {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/******************** Credit Card Styles  *****************/
+
+.CardDetails_creditCard__nlfT2 {
+  background: url(/_next/static/media/creditCardBG.b148bcf8.png) center /
+    cover no-repeat;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.CardDetails_title__DWONp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardDetails_title__DWONp h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.CardDetails_title__DWONp img {
+  width: 49.215px;
+  height: 32.81px;
+  flex-shrink: 0;
+}
+
+.CardDetails_creditCard__nlfT2 h4 {
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.CardDetails_detailsWrapper__sFPzY {
+  display: flex;
+  gap: 35px;
+}
+
+.CardDetails_detailsWrapper__sFPzY p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.CardDetails_detailsWrapper__sFPzY h6 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/************************** Credit Balance Styles  **************************/
+.CardDetails_creditBalance__THlPH {
+  padding: 15px;
+  border-radius: 20px;
+  border-radius: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    127deg,
+    rgba(34, 41, 78, 0.94) -4.23%,
+    rgba(10, 14, 35, 0.49) 76.75%
+  );
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  margin-bottom: 20px;
+}
+
+.CardDetails_creditBalance__THlPH p {
+  color: #e9edf7;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  margin-bottom: 5px;
+}
+
+.CardDetails_creditBalance__THlPH h3 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.CardDetails_taxesTitle__S489x {
+  color: #a0aec0;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.CardDetails_taxes__pI_Wl {
+  justify-content: space-between;
+}
+
+.CardDetails_taxes__pI_Wl > div,
+.CardDetails_taxes__pI_Wl {
+  display: flex;
+  align-items: center;
+}
+
+.CardDetails_taxes__pI_Wl > div {
+  gap: 15px;
+}
+
+.CardDetails_taxValues__Zw9_1 p:nth-of-type(1) {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+
+.CardDetails_taxValues__Zw9_1 p:nth-of-type(2) {
+  color: #a0aec0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/**************************** Payment Details Styling  ***********************/
+
+.CardDetails_paymentHeading__QxGPZ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.CardDetails_paymentHeading__QxGPZ h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.CardDetails_addNewCard__l6ubV {
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: #0075ff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.CardDetails_addNewCard__l6ubV:hover {
+  background: #fff;
+  color: #0075ff;
+}
+
+.CardDetails_paymentGrid__GxXCG {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.CardDetails_paymentCard__1EQ4M {
+  border-radius: 20px;
+  border: 0.5px solid #fff;
+  background: linear-gradient(
+    117deg,
+    rgba(255, 255, 255, 0) -3.91%,
+    rgba(255, 255, 255, 0.04) 75.27%
+  );
+  -webkit-backdrop-filter: blur(21px);
+          backdrop-filter: blur(21px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardDetails_paymentCard__1EQ4M > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .CardDetails_cardDetails__uie6N {
+    grid-template-columns: 1fr;
+  }
+
+  .CardDetails_creditCard__nlfT2 h4 {
+    margin-top: 65px;
+  }
+  .CardDetails_paymentGrid__GxXCG {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .CardDetails_paymentHeading__QxGPZ {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(main)/billing/components/invoices/Invoices.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+.Invoices_heading__fUWTx,
+.Invoices_invoice__cSjvk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Invoices_heading__fUWTx {
+  margin-bottom: 25px;
+}
+
+.Invoices_heading__fUWTx h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Invoices_addNewCard__HEXyc {
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: #0075ff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.Invoices_addNewCard__HEXyc:hover {
+  background: #fff;
+  color: #0075ff;
+}
+
+.Invoices_invoices__yCTig {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.Invoices_invoiceLeft__4P7H3 h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.Invoices_invoiceRight__esm4Z p,
+.Invoices_invoiceLeft__4P7H3 p {
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Invoices_pdf__f2qXa,
+.Invoices_invoiceRight__esm4Z {
+  display: flex;
+  align-items: center;
+}
+
+.Invoices_invoiceRight__esm4Z {
+  gap: 10px;
+}
+
+.Invoices_pdf__f2qXa {
+  gap: 5px;
+  cursor: pointer;
+}
+
+.Invoices_pdf__f2qXa svg,
+.Invoices_pdf__f2qXa p {
+  transition: all ease 0.3s;
+}
+
+.Invoices_pdf__f2qXa:hover svg {
+  color: #0075ff;
+}
+
+.Invoices_pdf__f2qXa:hover p {
+  color: #0075ff;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(main)/billing/components/transactions/Transactions.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Transactions_heading__U6S8x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Transactions_heading__U6S8x h5 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Transactions_date__DU0uY {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Transactions_date__DU0uY p {
+  color: #a0aec0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Transactions_categoryTitle__1Bcs3 {
+  color: #a0aec0;
+  margin-block: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Transactions_transGrid__h4rIC {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.Transactions_transaction__1USct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Transactions_subWrapper__aw4Aq {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.Transactions_increase__b7lMn,
+.Transactions_decrease__yBi7N,
+.Transactions_pending__LCsOd {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Transactions_increase__b7lMn {
+  border: 1px solid #01b574;
+}
+
+.Transactions_positiveValue__PGiOD,
+.Transactions_increase__b7lMn {
+  color: #01b574;
+}
+
+.Transactions_increase__b7lMn svg {
+  rotate: 180deg;
+}
+
+.Transactions_decrease__yBi7N {
+  border: 1px solid #e31a1a;
+}
+
+.Transactions_negativeValue__8Fh4D,
+.Transactions_decrease__yBi7N {
+  color: #e31a1a;
+}
+
+.Transactions_pending__LCsOd {
+  border: 1px solid #a0aec0;
+}
+
+.Transactions_pendingValue__TU0MB,
+.Transactions_pending__LCsOd {
+  color: #a0aec0;
+}
+
+.Transactions_transactionInfo__YrMxu h6 {
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.Transactions_transactionInfo__YrMxu p {
+  color: #a0aec0;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(main)/billing/components/billingInfo/BillingInfo.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+.BillingInfo_title__NphaX {
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.BillingInfo_billsGrid__ETRTP {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.BillingInfo_bill__da0MX {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BillingInfo_bill__da0MX h6 {
+  margin-bottom: 8px;
+}
+
+.BillingInfo_bill__da0MX p {
+  margin-bottom: 5px;
+  color: #a0aec0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.BillingInfo_actions__ce3iu {
+  display: flex;
+  gap: 15px;
+}
+
+.BillingInfo_edit__TPbjt,
+.BillingInfo_delete__lEXPw {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.BillingInfo_delete__lEXPw p,
+.BillingInfo_edit__TPbjt p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.BillingInfo_delete__lEXPw p {
+  color: #f53c2b;
+}
+
+.BillingInfo_edit__TPbjt p {
+  color: #a0aec0;
+}
+
+@media screen and (max-width: 576px) {
+  .BillingInfo_bill__da0MX {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .BillingInfo_actions__ce3iu {
+    justify-content: space-between;
+  }
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(main)/billing/BillingView.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.BillingView_cardAndInvoices__MpLJR,
+.BillingView_billingAndTransactions__rY_MZ {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.BillingView_cardAndInvoices__MpLJR > :nth-child(1),
+.BillingView_billingAndTransactions__rY_MZ > :nth-child(1) {
+  grid-column: span 7;
+}
+
+.BillingView_cardAndInvoices__MpLJR > :nth-child(2),
+.BillingView_billingAndTransactions__rY_MZ > :nth-child(2) {
+  grid-column: span 5;
+}
+
+@media screen and (max-width: 1200px) {
+  .BillingView_cardAndInvoices__MpLJR > :nth-child(1),
+  .BillingView_billingAndTransactions__rY_MZ > :nth-child(1) {
+    grid-column: span 12;
+  }
+
+  .BillingView_cardAndInvoices__MpLJR > :nth-child(2),
+  .BillingView_billingAndTransactions__rY_MZ > :nth-child(2) {
+    grid-column: span 12;
+  }
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/components/ui/cardWrapper/CardWrapper.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.CardWrapper_cardWrapper__XK4Pu {
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    127deg,
+    rgba(6, 11, 38, 0.74) 28.26%,
+    rgba(26, 31, 55, 0.5) 91.2%
+  );
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+
+  /* TODO : check if this blur is good, to be removed */
+  backdrop-filter: blur(60px);
+}
+
