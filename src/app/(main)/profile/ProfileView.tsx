@@ -1,5 +1,4 @@
 // Components
-import { main } from "@popperjs/core";
 import UserDetails from "./components/userDetails/UserDetails";
 
 // Styles
