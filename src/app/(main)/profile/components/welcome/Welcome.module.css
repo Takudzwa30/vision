@@ -1,0 +1,19 @@
+.welcome {
+  background: url("../../../../../assets/images/welcomeBG.png") center / cover
+    no-repeat;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.welcome h4 {
+  font-weight: 700;
+  line-height: normal;
+}
+
+.welcome p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 5px;
+}
+
