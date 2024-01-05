@@ -19,3 +19,16 @@
 .welcomeWrapper > :nth-child(3) {
   grid-column: span 4;
 }
+
+/* TODO : this is temporary  */
+@media screen and (max-width: 1440px) {
+  .welcomeWrapper > :nth-child(1) {
+    grid-column: span 12;
+  }
+  .welcomeWrapper > :nth-child(2) {
+    grid-column: span 12;
+  }
+  .welcomeWrapper > :nth-child(3) {
+    grid-column: span 12;
+  }
+}

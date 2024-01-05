@@ -1,4 +1,5 @@
 // Components
+import CarInfo from "./components/carInfo/CarInfo";
 import ProfileInfo from "./components/profileInfo/ProfileInfo";
 import UserDetails from "./components/userDetails/UserDetails";
 import Welcome from "./components/welcome/Welcome";
@@ -14,7 +15,7 @@ const ProfileView: React.FC = () => {
       </section>
       <section className={Style.welcomeWrapper}>
         <Welcome />
-        <div></div>
+        <CarInfo />
         <ProfileInfo />
       </section>
     </main>
