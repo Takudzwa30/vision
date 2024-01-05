@@ -3,6 +3,9 @@
     no-repeat;
   padding: 20px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .welcome h4 {
@@ -17,3 +20,17 @@
   margin-top: 5px;
 }
 
+.record {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.record svg {
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
