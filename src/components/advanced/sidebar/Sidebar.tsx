@@ -71,8 +71,8 @@ const Sidebar: React.FC<SidebarProps> = ({
             <IoHelpCircle />
           </div>
           <h5>Need help?</h5>
-          <h6>Please check our docs</h6>
-          <div className={Style.documentation}>DOCUMENTATION</div>
+          <h6>Please get in touch</h6>
+          <div className={Style.documentation}>CONTACT SUPPORT</div>
         </div>
       </div>
     </div>
