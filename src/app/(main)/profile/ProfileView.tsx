@@ -15,8 +15,8 @@ const ProfileView: React.FC = () => {
       </section>
       <section className={Style.welcomeWrapper}>
         <Welcome />
-        <CarInfo />
         <ProfileInfo />
+        <CarInfo />
       </section>
     </main>
   );

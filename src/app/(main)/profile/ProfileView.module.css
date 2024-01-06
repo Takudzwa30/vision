@@ -11,24 +11,21 @@
 }
 
 .welcomeWrapper > :nth-child(1) {
-  grid-column: span 3;
-}
-.welcomeWrapper > :nth-child(2) {
   grid-column: span 5;
 }
+.welcomeWrapper > :nth-child(2) {
+  grid-column: span 7;
+}
 .welcomeWrapper > :nth-child(3) {
-  grid-column: span 4;
+  grid-column: span 12;
 }
 
 /* TODO : this is temporary  */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 576px) {
   .welcomeWrapper > :nth-child(1) {
     grid-column: span 12;
   }
   .welcomeWrapper > :nth-child(2) {
-    grid-column: span 12;
-  }
-  .welcomeWrapper > :nth-child(3) {
     grid-column: span 12;
   }
 }
