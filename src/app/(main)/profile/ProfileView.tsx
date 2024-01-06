@@ -1,6 +1,8 @@
 // Components
 import CarInfo from "./components/carInfo/CarInfo";
+import PlatformSettings from "./components/platformSettings/PlatformSettings";
 import ProfileInfo from "./components/profileInfo/ProfileInfo";
+import Projects from "./components/projects/Projects";
 import UserDetails from "./components/userDetails/UserDetails";
 import Welcome from "./components/welcome/Welcome";
 
@@ -17,6 +19,10 @@ const ProfileView: React.FC = () => {
         <Welcome />
         <ProfileInfo />
         <CarInfo />
+      </section>
+      <section className={Style.projects}>
+        <PlatformSettings />
+        <Projects />
       </section>
     </main>
   );
