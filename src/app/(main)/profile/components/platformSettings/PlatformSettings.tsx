@@ -1,12 +1,12 @@
 "use client";
+import { useState } from "react";
 
 // Components
 import CardWrapper from "@/components/ui/cardWrapper/CardWrapper";
+import ToggleSwitch from "@/components/ui/toggleSwitch/ToggleSwitch";
 
 // Styles
 import Style from "./PlatformSettings.module.css";
-import ToggleSwitch from "@/components/ui/toggleSwitch/ToggleSwitch";
-import { useState } from "react";
 
 interface SwitchProps {
   tick: boolean;
