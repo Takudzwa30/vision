@@ -6,6 +6,7 @@ import {
   useMaterialReactTable,
   type MRT_ColumnDef,
 } from "material-react-table";
+import CardWrapper from "@/components/ui/cardWrapper/CardWrapper";
 
 //example data type
 type Person = {
@@ -73,16 +74,20 @@ const CustomTable = () => {
     () =>
       createTheme({
         palette: {
-          primary: globalTheme.palette.primary,
-          info: {
-            main: "rgb(255,122,0)",
+          primary: {
+            main: "#90caf9", // Adjust the primary color if needed
           },
           background: {
-            default: "#fff",
+            default: "#66000000", // Set the background color to a dark shade
+            paper: "#1e1e1e", // Set the paper color to a slightly lighter shade
+          },
+          text: {
+            secondary: "#fff",
+            primary: "#fff", // Set the text color to white
           },
         },
       }),
-    []
+    [globalTheme.palette.primary]
   );
 
   //should be memoized or stable
@@ -122,23 +127,29 @@ const CustomTable = () => {
     data,
     muiTableHeadCellProps: {
       sx: {
-        color: "red",
+        color: "#fff",
         fontSize: "1.1rem",
       },
     },
     muiTableBodyCellProps: {
       sx: {
         border: "1px solid rgba(81, 81, 81, .5)",
-        color: "red",
+        color: "#fff",
       },
     },
 
-    enableColumnFilterModes: true,
+    muiPaginationProps: {
+      color: "secondary",
+      rowsPerPageOptions: [2, 4, 6, 8, 10],
+      shape: "rounded",
+      variant: "outlined",
+    },
+    enableColumnFilterModes: false,
     enableColumnOrdering: true,
     enableGrouping: true,
     enableColumnPinning: true,
     enableFacetedValues: true,
-    enableRowActions: true,
+    enableRowActions: false,
     enableRowSelection: true,
     initialState: { showColumnFilters: true, showGlobalFilter: true },
     paginationDisplayMode: "pages",
@@ -147,18 +158,14 @@ const CustomTable = () => {
       size: "small",
       variant: "outlined",
     },
-    muiPaginationProps: {
-      color: "secondary",
-      rowsPerPageOptions: [10, 20, 30],
-      shape: "rounded",
-      variant: "outlined",
-    },
   });
 
   return (
-    <ThemeProvider theme={tableTheme}>
-      <MaterialReactTable table={table} />
-    </ThemeProvider>
+    <CardWrapper>
+      <ThemeProvider theme={tableTheme}>
+        <MaterialReactTable table={table} />
+      </ThemeProvider>
+    </CardWrapper>
   );
 };
 
