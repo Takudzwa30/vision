@@ -19,7 +19,6 @@ type Person = {
   state: string;
 };
 
-//nested data is ok, see accessorKeys in ColumnDef below
 const data: Person[] = [
   {
     name: {
@@ -75,15 +74,15 @@ const CustomTable = () => {
       createTheme({
         palette: {
           primary: {
-            main: "#90caf9", // Adjust the primary color if needed
+            main: "#90caf9",
           },
           background: {
-            default: "#66000000", // Set the background color to a dark shade
-            paper: "#1e1e1e", // Set the paper color to a slightly lighter shade
+            default: "#66000000",
+            paper: "#1e1e1e",
           },
           text: {
             secondary: "#fff",
-            primary: "#fff", // Set the text color to white
+            primary: "#fff",
           },
         },
       }),
