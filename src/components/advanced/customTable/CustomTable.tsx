@@ -1,4 +1,6 @@
 "use client";
+
+// Libraries
 import { createTheme, ThemeProvider, useTheme } from "@mui/material";
 import { useMemo } from "react";
 import {
@@ -6,9 +8,11 @@ import {
   useMaterialReactTable,
   type MRT_ColumnDef,
 } from "material-react-table";
+
+// Components
 import CardWrapper from "@/components/ui/cardWrapper/CardWrapper";
 
-//example data type
+// Types
 type Person = {
   name: {
     firstName: string;
@@ -19,6 +23,7 @@ type Person = {
   state: string;
 };
 
+// Data
 const data: Person[] = [
   {
     name: {
@@ -89,7 +94,7 @@ const CustomTable = () => {
     [globalTheme.palette.primary]
   );
 
-  //should be memoized or stable
+  // should be memoized or stable 
   const columns = useMemo<MRT_ColumnDef<Person>[]>(
     () => [
       {
