@@ -6,7 +6,7 @@ import Referral from "./components/referral/Referral";
 import Sales from "./components/sales/Sales";
 import Users from "./components/users/Users";
 import Orders from "./components/orders/Orders";
-import CustomTable from "@/components/advanced/customTable/CustomTable";
+import Table from "./components/table/Table";
 
 // Styles
 import Style from "./HomeView.module.css";
@@ -27,7 +27,7 @@ const HomeView: React.FC = () => {
         <Users />
       </section>
       <section className={Style.projectsAndOrders}>
-        <CustomTable />
+        <Table />
         <Orders />
       </section>
     </main>
