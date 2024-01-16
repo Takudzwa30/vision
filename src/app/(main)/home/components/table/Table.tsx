@@ -108,7 +108,7 @@ const Table = () => {
           },
         },
       }),
-    [globalTheme.palette.primary]
+    []
   );
 
   // should be memoized or stable
