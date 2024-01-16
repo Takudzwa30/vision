@@ -47,13 +47,13 @@ const Navbar: React.FC<SidebarProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 0;
+      const scrolled = window?.scrollY > 0;
       setIsScrolled(scrolled);
     };
-    window.addEventListener("scroll", handleScroll);
+    window?.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window?.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
