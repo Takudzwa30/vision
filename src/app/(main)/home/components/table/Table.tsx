@@ -117,7 +117,7 @@ const Table = () => {
       {
         accessorKey: "company",
         header: "Company",
-        size: 400,
+        size: 300,
         Cell: ({ cell }) => (
           <div className={Style.tableCompany}>
             <Image
