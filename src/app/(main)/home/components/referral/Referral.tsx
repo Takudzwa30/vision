@@ -26,6 +26,8 @@ const data: CardProps[] = [
 ];
 
 const Referral: React.FC = () => {
+  const getWindowWidth = () =>
+    typeof window !== "undefined" ? window.innerWidth : 0;
   return (
     <CardWrapper>
       <h6 className={Style.title}>Referral Tracking</h6>
@@ -43,9 +45,9 @@ const Referral: React.FC = () => {
             }}
             value={70}
             size={
-              window?.innerWidth >= 1300
+              getWindowWidth() >= 1300
                 ? 200
-                : window?.innerWidth >= 768
+                : getWindowWidth() >= 768
                 ? 170
                 : 200
             }
