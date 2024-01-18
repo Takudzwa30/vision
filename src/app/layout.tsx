@@ -4,11 +4,6 @@ import type { Metadata } from "next";
 // Libraries
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-// Fonts
-import { Inter } from "next/font/google";
-// TODO : CHECK FOR THE DESIRED FONT IN THE NEXT/FONT
-const inter = Inter({ subsets: ["latin"] });
-
 // Styles
 import "@/assets/css/index.css";
 
