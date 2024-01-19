@@ -91,7 +91,7 @@ const CustomTable = () => {
           },
         },
       }),
-    [globalTheme.palette.primary]
+    []
   );
 
   // should be memoized or stable 

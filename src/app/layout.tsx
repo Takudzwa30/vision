@@ -1,10 +1,8 @@
 // Metadata
 import type { Metadata } from "next";
 
-// Fonts
-import { Inter } from "next/font/google";
-// TODO : CHECK FOR THE DESIRED FONT IN THE NEXT/FONT
-const inter = Inter({ subsets: ["latin"] });
+// Libraries
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Styles
 import "@/assets/css/index.css";
@@ -44,7 +42,10 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
