@@ -1,6 +1,11 @@
 .tablesView {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
   gap: 20px;
-  /* width: calc(100dvw - 300px); */
+}
+
+.tablesView > :nth-child(1),
+.tablesView > :nth-child(2) {
+  grid-column: span 12;
 }
