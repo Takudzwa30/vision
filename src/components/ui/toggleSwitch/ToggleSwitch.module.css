@@ -1,11 +1,22 @@
 .mainContainer {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 .container {
   position: relative;
   display: flex;
+  flex-shrink: 0;
 }
+
+.mainContainer > p {
+  color: #a0aec0;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .toggleSwitch {
   width: 45px;
   display: inline-block;

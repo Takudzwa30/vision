@@ -40,6 +40,7 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
           </label>
         </div>
       </div>
+      <p>{label}</p>
     </div>
   );
 };

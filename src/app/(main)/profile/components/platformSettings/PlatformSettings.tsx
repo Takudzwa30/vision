@@ -24,14 +24,11 @@ const PlatformSettings: React.FC = () => {
 const Switch: React.FC<SwitchProps> = ({ tick }) => {
   const [checked, setChecked] = useState(tick);
   return (
-    <div>
-      <ToggleSwitch
-        checked={checked}
-        label={"jfskjfds"}
-        onChange={() => setChecked((prev) => !prev)}
-      />
-      <p>switch</p>
-    </div>
+    <ToggleSwitch
+      checked={checked}
+      label={"jfskjfds"}
+      onChange={() => setChecked((prev) => !prev)}
+    />
   );
 };
 
