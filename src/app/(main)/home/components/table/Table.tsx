@@ -149,7 +149,6 @@ const Table = () => {
         header: "Budget",
         size: 150,
         Cell: ({ cell }) =>
-          // Adjust the minimum and maximum fraction digits to 0
           cell.getValue<number>().toLocaleString("en-US", {
             style: "currency",
             currency: "USD",
