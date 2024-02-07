@@ -11,14 +11,17 @@
   gap: 20px;
 }
 
-.welcomeWrapper > :nth-child(1),
-.projects > :nth-child(1) {
+.welcomeWrapper > :nth-child(1) {
   grid-column: span 5;
 }
 
-.welcomeWrapper > :nth-child(2),
-.projects > :nth-child(2) {
+.welcomeWrapper > :nth-child(2) {
   grid-column: span 7;
+}
+
+.projects > :nth-child(2),
+.projects > :nth-child(1) {
+  grid-column: span 12;
 }
 
 .welcomeWrapper > :nth-child(3) {
